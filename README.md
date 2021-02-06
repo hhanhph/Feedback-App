@@ -1,30 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Feedback App 
+This is a collaboration project between the students of the International Media and Computing Course of Studies at the HTW Berlin and Brandung GmbH in the WiSe20. 
 
-## Getting Started
+## Demo on Heroku 
+Link: https://feedbackapp-demo.herokuapp.com/
 
-First, run the development server:
+## How to run the app:
+ * register a new app in Azure (follow the instructions from this article: https://docs.microsoft.com/en-in/azure/active-directory/develop/quickstart-register-app)
+ * create a new database in MongoDB and get the MongoDB URI from it
+ * clone this repository
+ * create an empty file called ```.env``` in the root directory
+ * paste the app id and secret key from Azure, as well as the MongoDB URI as the app environment variables in that file
+ * run ```npm run dev ``` 
+ * open http://localhost:3000/ in your browser 
+ 
+	
+## Features
+ * The users don't have to sign in to use the app
+ * The app finds all the meetings in one day and send links to the meeting participants 5' after the meetings end, the meeting host will be notified about the evaluation the next day
+ * Participants can submit their feedback anonymously
+ 
+ ## Screenshots
+<img src="https://user-images.githubusercontent.com/56653204/107071232-b4e45780-67e4-11eb-889c-060ba7779d5d.png" /> 
+<img src="https://user-images.githubusercontent.com/56653204/107071238-b6158480-67e4-11eb-915a-fe9893434311.png" />
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Contributors 
+ | Name       | Email           | 
+| ------------- |:-------------:| 
+| Timo Schmidt  | Timo.Schmidt@Student.HTW-Berlin.de | 
+| Hanh Phan     | Hanh.Phan@Student.HTW-Berlin.de |  
+| Ferdinand Faller | s0548784@htw-berlin.de |
+| Osee Bulayumi | 	Osee.Bulayumi@Student.HTW-Berlin.de | 
+| Yannick Hass   |  Yannick.Hass@Student.HTW-Berlin.de |
+| David Albrecht | David.Albrecht@Student.HTW-Berlin.de | 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ 
+## Documentations
+* https://nextjs.org/
+* https://docs.microsoft.com/en-sg/graph/overview
+* https://styled-components.com/
+* https://reactjs.org/docs/hooks-intro.html
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Credits
+* [Start page animation by dilpreet singh on LottieFiles](https://lottiefiles.com/28457-feedback-persuasion-animation)
+* [Check Mark animation by Ami Moradia on LottieFiles](https://lottiefiles.com/20576-check-mark)
+* [404 Animation by Mark Arrow on LottieFiles](https://lottiefiles.com/40806-error-404?lang=de)
+* [iPhone 12 Mockups by MockUPhone](https://mockuphone.com/device?type=ios#iphone12)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
